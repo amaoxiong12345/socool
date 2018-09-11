@@ -1,0 +1,211 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,p{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+img,input{
+	vertical-align: bottom;
+}
+/*页面基础样式设置*/
+body{
+	font-family: "Microsoft YaHei",sans-serif;
+	font-size: 12px;
+	color: #999;
+}
+/*导航栏制作*/
+#nav,#banner,#commend,#main,#second,#thr{
+	width: 990px;
+	margin: 0 auto;
+}
+#nav{
+	height: 30px;
+	background: #eeeeee;
+	line-height: 30px;
+}
+#nav .nav_right{
+	float: right;
+}
+#nav .nav_right li{
+	float: left;
+	padding: 0 5px;
+}
+#nav .nav_right li b{
+	border-left: 1px solid #999;
+	margin-right: 10px;
+}
+#nav .nav_right a:hover{
+	color: #f6ab00;
+	text-decoration: none;
+}
+#nav .nav_left>li{
+	float: left;
+	padding-left: 10px; 
+}
+#nav .nav_left>li>u{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top: 6px solid black;
+	position: relative;
+	top: 4px;
+}
+#nav .nav_left>li a:hover{
+	color: #64a131;
+	text-decoration: underline;
+}
+#nav .nav_left .firstli{
+	position: relative;
+}
+#nav .nav_left .select{
+	display: none;
+	position: absolute;
+	/*调节元素的堆叠次序，始终在上方显示*/
+	z-index: 100;
+}
+#nav .nav_left .firstli:hover .select{
+	/*若该元素并没有脱流且设置始终在上方显示可能会占位*/
+	display: block;
+}
+#banner{
+	margin: 15px auto;
+}
+#banner img{
+	width: 100%;
+	height: 207px;
+}
+/*小图推荐*/
+#commend{
+	height: 112px;
+}
+#commend img{
+	width: 240px;
+	margin-right: 10px;
+	float: left;
+}
+#commend .lastimg{
+	margin-right: 0;
+}
+/*主体部分*/
+#main p{
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+#second p{
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+#thr p{
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+#main>p>a{
+	color: #333;
+	float: right;
+}
+#second>p>a{
+	color: #333;
+	float: right;
+}
+#thr>p>a{
+	color: #333;
+	float: right;
+}
+
+#main>p>img{
+	width: 356px;
+}
+#second>p>img{
+	width: 356px;
+}
+#thr>p>img{
+	width: 356px;
+}
+
+#main .item{
+	float: left;
+	margin-right: 10px;
+	width: 190px;
+	overflow: hidden;
+}
+#second .item{
+	float: left;
+	margin-right: 10px;
+	width: 190px;
+	overflow: hidden;
+}
+#thr .item{
+	float: left;
+	margin-right: 10px;
+	width: 190px;
+	overflow: hidden;
+}
+
+#main .item>img{
+	width: 190px;
+	height: 190px;
+	transition: all .3s;
+}
+#second .item>img{
+	width: 190px;
+	height: 190px;
+	transition: all .3s;
+}
+#thr .item>img{
+	width: 190px;
+	height: 190px;
+	transition: all .3s;
+}
+
+#main .item>p>img{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#second .item>p>img{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#thr .item>p>img{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#main .item>p{
+	margin-top: 3px;
+	margin-right: 3px;
+}
+#second .item>p{
+	margin-top: 3px;
+	margin-right: 3px;
+}
+#thr .item>p{
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+#main .item>img:hover{
+	transform: scale(1.1)
+}
+#second .item>img:hover{
+	transform: scale(1.1)
+}
+#thr .item>img:hover{
+	transform: scale(1.1)
+}
+
+#mlastimg1,#mlastimg2,#slastimg1,#slastimg2,#tlastimg1,#tlastimg2{
+	margin-right: 0;
+}

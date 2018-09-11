@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>天天果园</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/index.js"></script>
+</head>
+<body>
+	<!-- 页面模块 -->
+	<!-- 导航栏 -->
+    {% csrf_token %}
+	<div id="nav">
+		<!-- 右侧导航 -->
+		<ul class="nav_right">
+			<li id="headline">
+			</li>
+			<li>
+				果园公告
+			</li>
+			<li>
+				<b></b>
+				<a href="#">劵卡兑换</a>
+			</li>
+			<li>
+				<b></b>
+				<a href="#">手机果园</a>
+			</li>
+		</ul>
+		<!-- 左侧 -->
+		<ol class="nav_left">
+			<li class="firstli">
+				北京
+				<u></u>
+				<ul class="select">
+					<li>上海</li>
+					<li>广州</li>
+					<li>深圳</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">满百包邮（环郊内）</a>
+			</li>
+			<li>
+				<a href="#">星夜达</a>
+			</li>
+		</ol>
+	</div>
+	<!-- 轮播图 -->
+	<div id="banner">
+		<img src="/static/images/banner1.jpg">
+	</div>
+	<!-- 小图推荐 -->
+	<div id="commend">
+		<img src="/static/images/one.jpg">
+		<img src="/static/images/two.jpg">
+		<img src="/static/images/thr.jpg">
+		<img src="/static/images/four.jpg" class="lastimg">
+	</div>
+	<!-- 商品信息展示 -->
+    <div id="main"></div>
+</body>
+</html>

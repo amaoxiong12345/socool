@@ -1,0 +1,61 @@
+{% extends 'login.html' %}
+
+{% block title %}
+    会员注册
+{% endblock %}
+
+{% block pic %}会员登录{% endblock %}
+
+{% block add %}
+    <tr>
+        <td align="right">确认密码</td>
+        <td>
+            <input type="text" name="repeat" class="put">
+        </td>
+        <td id="repeatshow"></td>
+    </tr>
+    <tr>
+        <td align="right">用户名</td>
+        <td>
+            <input type="text" name="uname" class="put">
+        </td>
+        <td id="unameshow"></td>
+    </tr>
+        <tr>
+        <td align="right">邮箱</td>
+        <td>
+            <input type="text" name="uemail" class="put">
+        </td>
+        <td id="uemailshow"></td>
+    </tr>
+{% endblock %}
+
+{% block del %}
+{% endblock %}
+
+{% block put %}
+    height:30px;
+    padding: 0 12px;
+{% endblock %}
+
+{% block td %}
+    padding-bottom: 12px;
+{% endblock %}
+
+{% block from %}
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/register.js"></script>
+	<form action="/register/" method="post" id="frmRegister">
+    {% csrf_token %}
+    {% endblock %}
+
+{% block btn %}
+    <tr>
+        <td></td>
+        <td>
+        <button type="submit">注册</button>
+        <button type="button" id="ins" value="login"
+        onclick="location.href='/login'">注册登录</button>
+        </td>
+    </tr>
+{% endblock %}
